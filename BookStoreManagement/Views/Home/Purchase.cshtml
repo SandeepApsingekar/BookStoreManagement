@@ -1,0 +1,73 @@
+﻿@model DAL.Models.Product
+@{
+    ViewBag.Title = "Purchase";
+}
+
+@ViewBag.bookName
+<h2>Purchase</h2>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<script>
+    model.Quantity = string.Empty;
+</script>
+
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        @using (Html.BeginForm("Cart", "Home", FormMethod.Post))
+        {
+            <div class="panel panel-primary">
+
+                <div class="panel-heading">Purchase Book</div>
+                <div class="panel-body">
+                    @Html.HiddenFor(model => model.ProductID)
+                    @Html.HiddenFor(model => model.ProductName)
+                    @Html.HiddenFor(model => model.ProductPrice)
+                    @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+                    </div><br />
+
+                    <div class="col-md-10">
+                        <input type="submit" value="Submit" class="btn btn-default" />
+                        @Html.ActionLink("View Cart","ViewCart")
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="col-md-3"></div>
+
+</div>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductPrice)
+        </dd>
+
+    </dl>
+</div>
+

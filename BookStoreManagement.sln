@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStoreManagement", "BookStoreManagement\BookStoreManagement.csproj", "{A11E6337-B0D3-4681-B1A8-98FBE37800A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{0F6B5572-D562-4C92-AF76-EED2AF75227C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book.Service", "Book.Service\Book.Service.csproj", "{DA6AEC59-315A-418B-9E86-334381137690}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A11E6337-B0D3-4681-B1A8-98FBE37800A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A11E6337-B0D3-4681-B1A8-98FBE37800A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A11E6337-B0D3-4681-B1A8-98FBE37800A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A11E6337-B0D3-4681-B1A8-98FBE37800A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F6B5572-D562-4C92-AF76-EED2AF75227C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F6B5572-D562-4C92-AF76-EED2AF75227C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F6B5572-D562-4C92-AF76-EED2AF75227C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F6B5572-D562-4C92-AF76-EED2AF75227C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA6AEC59-315A-418B-9E86-334381137690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA6AEC59-315A-418B-9E86-334381137690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA6AEC59-315A-418B-9E86-334381137690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA6AEC59-315A-418B-9E86-334381137690}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

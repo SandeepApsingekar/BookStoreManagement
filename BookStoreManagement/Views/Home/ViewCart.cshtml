@@ -1,0 +1,29 @@
+﻿@model DAL.Models.Product
+@{
+    ViewBag.Title = "ViewCart";
+}
+
+<h2 class="text-center">ViewCart</h2>
+@using (Html.BeginForm("CheckOut","Checkout"))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">Product Information</div>
+                <div class="panel-body">
+                    @Html.HiddenFor(model => model.ProductID)
+                    @Html.HiddenFor(model => model.ProductName)
+                    <b> Product Name</b> : @ViewBag.ProductName<br />
+                    <b> Quantity Purchased</b>  : @ViewBag.Quantity<br />
+                    <b> Price</b>: @ViewBag.Total<br />
+                    <div class="form-group">
+                        <input type="submit" name="Check Out" value="Check Out" class="btn btn-success" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+}
